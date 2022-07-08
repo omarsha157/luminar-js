@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .success-clr {
+            border: 1px solid green;
+            color: green;
+            background-color: aliceblue;
+        }
+        .danger-clr {
+            border: 1px solid red;
+            color: red;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="id_age" placeholder="enter age">
+    <div id="result"></div>
+    <button id="age-btn">validate</button>
+    
+    
+    <script>
+        let agebtn = document.querySelector('#age-btn');
+
+        agebtn.addEventListener("click", validateAge);
+
+        function validateAge() {
+            let currAge = document.querySelector('#id_age').value;
+            let myDiv = document.querySelector('#result');
+
+            if (currAge < 18) {
+                myDiv.innerHTML = "invalid age";
+                myDiv.classList.add('danger-clr');
+                // myDiv.classList.remove('success-clr');
+            } else {
+                myDiv.innerHTML = "valid age";
+                myDiv.classList.add('success-clr');
+                // myDiv.classList.remove('danger-clr');
+            }
+        }
+    </script>
+</body>
+</html>

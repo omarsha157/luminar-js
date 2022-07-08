@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>color changer</h1>
+    <div class="section" style="width: 200px;height: 200px;border: 1px solid black;">
+        <p>am here</p>
+    </div>
+
+    <button id="id_red">red</button>
+    <button id="id_green">green</button>
+
+    <script>
+        let redBtn = document.querySelector('#id_red');
+
+        redBtn.addEventListener("click", changeColorRed);
+        function changeColorRed() {
+            let myDiv = document.querySelector(".section");
+
+            myDiv.style.backgroundColor = "red";
+        }
+        let greenBtn = document.querySelector('#id_green');
+
+        greenBtn.addEventListener("click", changeColorGreen);
+        function changeColorGreen() {
+            let myDiv = document.querySelector(".section");
+
+            myDiv.style.backgroundColor = "green";
+        }
+
+    </script>
+</body>
+</html>

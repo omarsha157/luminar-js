@@ -1,0 +1,12 @@
+let age = 20;
+console.log(typeof(age));
+let avg = 20.654;
+console.log(typeof(avg));
+let nameOne = "aisj";
+console.log(typeof(nameOne));
+let val = true;
+console.log(typeof(val));
+let valak;
+console.log(typeof(valak));
+let random = null;
+console.log(typeof(random));
